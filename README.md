@@ -1,2 +1,2 @@
 # VARI-PUBLISH
-저의 퍼블리싱입니다.
+:sunflower: 심심해서 하는 퍼블리싱 :sunflower:
