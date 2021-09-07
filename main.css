@@ -26,6 +26,7 @@ header {
 }
 
 .writeBtn {
+  transition: 0.2s;
   margin-right: 30px;
   width: 120px;
   height: 45px;
@@ -42,6 +43,9 @@ header {
 
 .writeBtn:hover {
   background-color: white;
+  border: 1px solid #395bb4;
+  color: #395bb4;
+  transition: 0.2sx;
 }
 
 .profile > h6 {
