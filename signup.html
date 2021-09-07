@@ -13,7 +13,7 @@
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="signin.css" />
+    <link rel="stylesheet" href="signup.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VARI</title>
@@ -23,7 +23,9 @@
       <div class="logo">
         <img src="./image/smalllogo.png" alt="로고" class="logoimg" />
       </div>
-      <div class="loginform">
+      <div class="signupform">
+        <p class="nametxt">Name</p>
+        <input type="text" class="name" placeholder="이름을 입력하세요." />
         <p class="emailtxt">Email</p>
         <input type="text" class="email" placeholder="이메일을 입력하세요." />
         <p class="passwordtxt">Password</p>
@@ -33,10 +35,10 @@
           placeholder="비밀번호를 입력하세요."
         />
         <div class="button">
-          <button class="signin" onclick="location.href='main.html'">
-            로그인
-          </button>
-          <a href="signup.html" class="gosignup">계정이 없으신가요? 회원가입</a>
+          <button class="signup">회원가입</button>
+          <a href="signin.html" class="gosignin"
+            >이미 계정이 있으신가요? 로그인</a
+          >
         </div>
       </div>
     </div>

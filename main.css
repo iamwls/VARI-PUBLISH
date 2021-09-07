@@ -4,12 +4,25 @@ body {
   height: 100vh;
   padding: 0;
   overflow-x: hidden;
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
 header {
   display: flex;
   width: 100%;
-  height: 120px;
+  height: 100px;
   padding: 1rem;
   background: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -53,9 +66,92 @@ header {
   color: #395bb4;
 }
 
+/* maincontent */
+.maincontent {
+  width: 100%;
+  height: 443px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
 .name {
   font-size: 20px;
 }
 .sla {
   font-size: 16px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maintxt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  color: #000;
+  position: absolute;
+  top: 90px;
+  left: 130px;
+}
+
+.maincontentlogo {
+  width: 227px;
+  height: 52px;
+  position: absolute;
+  bottom: 120px;
+  left: 130px;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.maincontentimg {
+  width: 460px;
+  height: 364px;
+  position: absolute;
+  right: 100px;
+}
+
+/* VARI */
+.vari {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.mainmenu > a {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #b1b1b1;
+}
+
+.hashtag {
+  margin-top: 80px;
+}
+
+.hashtag > a {
+  margin-right: 40px;
+  font-weight: 500;
+  color: #474bff;
 }

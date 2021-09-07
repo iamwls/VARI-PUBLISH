@@ -26,7 +26,7 @@ body {
   height: 39px;
 }
 
-.loginform {
+.signupform {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -34,21 +34,25 @@ body {
   align-items: center;
 }
 
-.loginform > p {
+.signupform > p {
   font-weight: 100;
   font-size: 18px;
   color: #292929;
 }
 
-.loginform > .emailtxt {
+.signupform > .nametxt {
   margin-left: -350px;
 }
 
-.loginform > .passwordtxt {
+.signupform > .emailtxt {
+  margin-left: -350px;
+}
+
+.signupform > .passwordtxt {
   margin-left: -318px;
 }
 
-.loginform > input {
+.signupform > input {
   outline: 0;
   border: 0;
   width: 400px;
@@ -67,7 +71,7 @@ body {
   align-items: center;
 }
 
-.signin {
+.signup {
   margin-top: 60px;
   outline: 0;
   border: 0;
@@ -76,20 +80,20 @@ body {
   background-color: #395bb4;
   color: #fff;
   border-radius: 15px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   cursor: pointer;
 }
 
-.signin:hover {
+.signup:hover {
   background-color: #fff;
   color: #395bb4;
   border: 2px solid #395bb4;
   transition: 0.5s;
 }
 
-.gosignup {
-  margin-top: 180px;
+.gosignin {
+  margin-top: 65px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
