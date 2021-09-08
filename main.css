@@ -27,6 +27,7 @@ header {
   background: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   align-items: center;
+  position: fixed;
   z-index: 1;
 }
 
@@ -52,6 +53,7 @@ header {
   line-height: 30px;
   background-color: #395bb4;
   color: #fff;
+  cursor: pointer;
 }
 
 .writeBtn:hover {
@@ -68,6 +70,7 @@ header {
 
 /* maincontent */
 .maincontent {
+  margin-top: 100px;
   width: 100%;
   height: 443px;
   background-color: #fff;
@@ -92,7 +95,7 @@ header {
 .maintxt {
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 26px;
   color: #000;
   position: absolute;
@@ -115,8 +118,8 @@ header {
 }
 
 .maincontentimg {
-  width: 460px;
-  height: 364px;
+  width: 390px;
+  height: 275px;
   position: absolute;
   right: 100px;
 }
@@ -127,7 +130,7 @@ header {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   justify-content: center;
   align-items: center;
 }
@@ -136,14 +139,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 140px;
 }
 
-.mainmenu > a {
-  margin-right: 40px;
+.mainmenu > div {
+  margin-right: 80px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 26px;
   color: #b1b1b1;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mainmenu > .current {
+  color: #395bb4;
+}
+
+.tab-content {
+  display: none;
+  width: 1218px;
+  flex-wrap: wrap;
 }
 
 .hashtag {
@@ -151,7 +166,66 @@ header {
 }
 
 .hashtag > a {
-  margin-right: 40px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
   color: #474bff;
+  background-color: #fff;
+  margin-right: 40px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid #474bff;
+}
+
+.hashtag > .web {
+  color: #fff;
+  background-color: #474bff;
+}
+
+/* LIST */
+.listbox {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li1 {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 264px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot {
+  width: 210px;
+  height: 140px;
+  border-radius: 10px;
+  margin-top: 27px;
+  margin-left: 27px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 27px;
+}
+
+.teamname {
+  margin-top: 10px;
+  margin-left: 200px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #646464;
 }
