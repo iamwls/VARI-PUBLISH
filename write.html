@@ -18,6 +18,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VARI</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/write.js"></script>
   </head>
   <body>
     <div class="content">
@@ -28,7 +30,9 @@
         >
           <img class="logo" src="./image/smalllogo.png" />
         </a>
-        <button class="writeBtn">글쓰기</button>
+        <button class="writeBtn" onclick="location.href='write.html'">
+          글쓰기
+        </button>
         <div class="profile">
           <h6 class="name">김아련</h6>
           <h6 class="sla">님</h6>
@@ -37,13 +41,28 @@
       <div class="formwrap">
         <input type="text" class="title" placeholder="제목을 입력하세요." />
         <div class="select">
-          <div class="typeselect">
+          <div class="select1">
             <p class="typetxt">분야를 선택해주세요.</p>
-            <div class="typedrop"></div>
+            <button class="dropbtn">
+              선택<img
+                src="./image/dropicon.png"
+                alt="드롭아이콘"
+                class="dropicon"
+              />
+            </button>
+            <div class="drop-content">
+              <a href="#" class="web">WEB</a>
+              <a href="#" class="android">ANDROID</a>
+              <a href="#" class="iOS">iOS</a>
+              <a href="#" class="IoT">IoT</a>
+              <a href="#" class="AI">AI</a>
+              <a href="#" class="Design">DESIGN</a>
+              <a href="#" class="etc">ETC</a>
+            </div>
           </div>
-          <div class="teamnameselect">
+          <div class="select1">
             <p class="teamnametxt">팀 이름을 작성해주세요.</p>
-            <div class="teamnamedrop"></div>
+            <input type="text" class="teamnameinput" placeholder="입력" />
           </div>
         </div>
       </div>

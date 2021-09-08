@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: 0;
+  border: 0;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -44,8 +49,6 @@ header {
   margin-right: 30px;
   width: 120px;
   height: 45px;
-  border: 0;
-  outline: 0;
   border-radius: 20px;
   font-style: normal;
   font-weight: 600;
@@ -101,12 +104,54 @@ header {
 .select {
   margin-top: 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-.select > p {
+.select1 > p {
   margin-right: 380px;
   font-weight: 600;
   color: #484848;
   font-size: 18px;
+}
+
+.select1 > .dropbtn {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 260px;
+  height: 55px;
+  border-radius: 10px;
+  text-align: start;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: #8e8e8e;
+}
+
+.dropicon {
+  width: 25px;
+  height: 25px;
+  margin-left: 168px;
+}
+
+.drop-content {
+  display: none;
+  margin-top: 12px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  width: 260px;
+  height: 306px;
+  font-size: 16px;
+  font-weight: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop-content > a {
+  color: #5b5b5b;
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
