@@ -1,7 +1,7 @@
 #html,
 body {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   padding: 0;
   overflow-x: hidden;
   margin: 0;
@@ -136,6 +136,7 @@ header {
 }
 
 .drop-content {
+  position: absolute;
   display: none;
   margin-top: 12px;
   /* display: flex; */
@@ -148,10 +149,87 @@ header {
   font-size: 16px;
   font-weight: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .drop-content > a {
   color: #5b5b5b;
-  margin-bottom: 15px;
-  margin-left: 20px;
+  width: 92.5%;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.drop-content > a:hover {
+  background-color: #f0f0f0;
+}
+
+.drop-content > .web {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.drop-content > .etc {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.teamnameinput {
+  outline: 0;
+  border: 0;
+  width: 450px;
+  height: 55px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.teamnameinput::placeholder {
+  color: #8e8e8e;
+}
+
+.addfilebtn {
+  margin-top: 20px;
+  margin-right: 960px;
+  width: 120px;
+  background-color: #f6f6f6;
+  height: 40px;
+  color: #8e8e8e;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.af {
+  display: none;
+}
+.contentta {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#contenttextarea {
+  outline: none;
+  border: none;
+  margin-right: 76px;
+  width: 935px;
+  height: 420px;
+  resize: none;
+  background-color: #f6f6f6;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+#contenttextarea::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8e8e;
 }
