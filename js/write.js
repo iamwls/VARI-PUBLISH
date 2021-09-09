@@ -13,6 +13,21 @@ button.addEventListener("blur", () => {
   }, 200);
 });
 
+const profile = document.querySelector(".profile");
+
+profile.addEventListener("click", () => {
+  const dropdown = document.querySelector(".profile-content");
+  dropdown.style.visibility = "visible";
+});
+
+profile.addEventListener("blur", () => {
+  const dropdown = document.querySelector(".profile-content");
+  // 0.2초 뒤에 실행
+  setTimeout(() => {
+    dropdown.style.visibility = "hidden";
+  }, 200);
+});
+
 $(function () {
   $(".addfilebtn").click(function (e) {
     e.preventDefault();

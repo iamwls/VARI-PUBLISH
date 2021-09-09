@@ -34,14 +34,14 @@ header {
 .logo {
   padding-left: 30px;
   margin: 10px;
-  margin-right: 1300px;
+  margin-right: 1150px;
   width: 141px;
   height: 32px;
 }
 
 .writeBtn {
   transition: 0.2s;
-  margin-right: 30px;
+  margin-right: 40px;
   width: 120px;
   height: 45px;
   border: 0;
@@ -50,7 +50,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
   background-color: #395bb4;
   color: #fff;
   cursor: pointer;
@@ -63,9 +62,15 @@ header {
   transition: 0.2sx;
 }
 
-.profile > h6 {
+.profile {
+  margin-right: 40px;
+}
+
+.profile > a {
+  font-weight: 600;
   display: inline;
   color: #395bb4;
+  cursor: pointer;
 }
 
 .name {
@@ -73,6 +78,11 @@ header {
 }
 .sla {
   font-size: 16px;
+}
+
+.alarmicon {
+  width: 32px;
+  height: 32px;
 }
 
 /* maincontent */

@@ -32,10 +32,16 @@
           글쓰기
         </button>
         <div class="profile">
-          <h6 class="name">김아련</h6>
-          <h6 class="sla">님</h6>
+          <a href="#" class="name">김아련</a>
+          <a href="#" class="sla">님</a>
         </div>
+
+        <img src="./image/bell.png" alt="알림 아이콘" class="alarmicon" />
       </header>
+      <div class="profile-content">
+        <a href="#" class="mypage">마이페이지</a>
+        <a href="#" class="logout">로그아웃</a>
+      </div>
       <div class="formwrap">
         <input type="text" class="title" placeholder="제목을 입력하세요." />
         <div class="select">
@@ -73,6 +79,12 @@
             id="contenttextarea"
             placeholder="내용을 입력하세요."
           ></textarea>
+        </div>
+        <div class="buttons">
+          <button class="save">저 장</button>
+          <button class="cancle" onclick="location.href='main.html'">
+            취 소
+          </button>
         </div>
       </div>
     </div>

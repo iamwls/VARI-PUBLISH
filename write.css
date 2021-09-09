@@ -1,7 +1,7 @@
 #html,
 body {
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   padding: 0;
   overflow-x: hidden;
   margin: 0;
@@ -39,21 +39,22 @@ header {
 .logo {
   padding-left: 30px;
   margin: 10px;
-  margin-right: 1300px;
+  margin-right: 1150px;
   width: 141px;
   height: 32px;
 }
 
 .writeBtn {
   transition: 0.2s;
-  margin-right: 30px;
+  margin-right: 40px;
   width: 120px;
   height: 45px;
+  border: 0;
+  outline: 0;
   border-radius: 20px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
   background-color: #395bb4;
   color: #fff;
   cursor: pointer;
@@ -66,9 +67,39 @@ header {
   transition: 0.2sx;
 }
 
-.profile > h6 {
+.profile {
+  margin-right: 40px;
+}
+
+.profile > a {
+  font-weight: 600;
   display: inline;
   color: #395bb4;
+  cursor: pointer;
+}
+
+.profile-content {
+  visibility: hidden;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 1465px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 94px;
+  background: #ffffff;
+  border: 0.6px solid #cfcfcf;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.profile-content > a {
+  margin: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7b7b7b;
 }
 
 .name {
@@ -78,9 +109,13 @@ header {
   font-size: 16px;
 }
 
+.alarmicon {
+  width: 32px;
+  height: 32px;
+}
+
 /* FORMWRAP */
 .formwrap {
-  margin-top: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +123,7 @@ header {
 }
 
 .title {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-right: 600px;
   width: 472px;
   outline: 0;
@@ -232,4 +267,28 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: #8e8e8e;
+}
+
+.buttons {
+  margin-left: 652px;
+}
+
+.buttons > button {
+  width: 130px;
+  height: 55px;
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 22px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.save {
+  background-color: #395bb4;
+}
+
+.cancle {
+  background-color: #c7cfe3;
 }
