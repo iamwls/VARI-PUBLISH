@@ -24,7 +24,7 @@ profile.addEventListener("blur", () => {
   const dropdown = document.querySelector(".profile-content");
   // 0.2초 뒤에 실행
   setTimeout(() => {
-    dropdown.style.visibility = "hidden";
+    dropdown.style.visibility = "";
   }, 200);
 });
 
